@@ -1,0 +1,144 @@
+
+
+<!-- This is Code Challenge 1 --------------------------->
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+
+        .row{
+            width: 100%;
+        }
+        </style>
+
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1517783887476-66ca3d04b132?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=438&q=80" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Nature</h2>
+              <p class="title">Can be called a nature</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>nature@hello.com</p>
+              
+              <div class="container">
+              
+                <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover lorem ndwgjdsg dbhjgsdsa gbshghjga">Explore</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1617715426034-916b3d1dc978?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=358&q=80" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>animation</h2>
+              <p class="title">can be called a animation</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>animation@example.com</p>
+                          <div class="container">
+                
+                <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover lorem ndwgjdsg dbhjgsdsa gbshghjga">Explore</a>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1614191663579-8780442c043b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Hill station</h2>
+              <p class="title">Awesome</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>hill station@example.com</p>
+              <div class="container">
+      
+                <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover lorem ndwgjdsg dbhjgsdsa gbshghjga">Explore</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+     
+</body>
+ 
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });
+  </script>
+
+
+</html> 
+
